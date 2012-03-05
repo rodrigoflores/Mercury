@@ -10,11 +10,13 @@ For now, it is only working on OSX Lion.
 * [Tanoku's Sundown](https://github.com/tanoku/sundown) (which is already included as a gitmodule)
 
 ## Installing
-    git clone git://github.com/rodrigoflores/Mercury.git
-    cd Mercury
-    git submodule init
-    git submodule update 
-    make
+
+```console
+git clone git://github.com/rodrigoflores/Mercury.git
+cd Mercury
+git submodule update --init
+make
+```
 
 ## To load in an Erlang app
 
@@ -31,7 +33,7 @@ If everything is working, it should return: `<<"<h1>An awesome title</h1>">>`
 
 Pull requests are welcome :)
 
-* How do I put markdown.so globally so only a `erlang:load_nif('markdown',1)` is enough to load it ?
+* How do I put markdown.so globally so only a `erlang:load_nif('markdown',1)` is enough to load it?
 * Make it work on Linux environments;
 * Make it work on Windows environments.
 
